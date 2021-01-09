@@ -10,80 +10,79 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://kit.fontawesome.com/5c503e8b03.js" crossorigin="anonymous"></script>
         <link rel=icon href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14/svgs/solid/user-tie.svg>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" media="screen and (max-width: 470px)" href="media.css">
     </head>
-    <style>
-        #details {display:none}
-    </style>
     <body>
         <!-- card top -->
         <div class="position-fixed d-flex justify-content-center align-items-center w-100 h-100">
-        <div id="card" class="container p-3 my-auto mx-auto border" style="max-width: 500px;z-index: 10;">
-            <div>
-                <h3 class="text-body font-weight-bold">Muhammad Fauzan Murtadho</h3>
-                <h4 class="text-body font-weight-bold">Bachelor of Engineering in Geophysics</h4>
+            <div id="card" class="container p-3 my-auto mx-auto border bx-shdw bg-light" style="max-width: 500px;z-index: 10;">
+                <div>
+                    <h3 class="text-body font-weight-bold">Muhammad Fauzan Murtadho</h3>
+                    <h4 class="text-body font-weight-bold">Bachelor of Engineering in Geophysics</h4>
+                </div>
+                <div class="border-bottom border-primary">
+                    <h5 class="media">
+                        <i class="fas fa-globe-asia text-primary fa-2x pr-2"></i>
+                        <span class="media-body align-self-center text-body">
+                            Bandar Lampung, Indonesia
+                           <a href="https://goo.gl/maps/xhrgN8mp428hAxxm9" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </span>
+                    </h5>
+                    <h5 class="media">
+                        <i class="fas fa-phone-alt text-primary fa-2x pr-2"></i>
+                        <span class="media-body align-self-center text-body">+6281278744679</span>
+                    </h5>
+                    <h5 class="media">
+                        <i class="fas fa-envelope text-primary fa-2x pr-2"></i>
+                        <span class="media-body align-self-center text-body">
+                            mfauzan.murtadho@gmail.com 
+                            <a href="mailto:mfauzan.murtadho@gmail.com" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </span>
+                    </h5>
+                </div>
+                <div class="d-flex align-items-center justify-content-around rounded-lg p-2">
+                    <a href="https://wa.me/6281278744679" target="_blank">
+                        <i class="fab fa-whatsapp fa-2x"></i>
+                    </a>
+                    <a href="https://t.me/m_fzn_m" target="_blank">
+                        <i class="fab fa-telegram fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/m_fzn_m/" target="_blank">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/m-fauzan-murtadho-337765141" target="_blank">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://line.me/R/ti/p/@fzn_777" target="_blank">
+                        <i class="fab fa-line fa-2x"></i>
+                    </a>
+                    <a href="https://discordapp.com/users/692557459398590545" target="_blank">
+                        <i class="fab fa-discord fa-2x"></i>
+                    </a>
+                    <a href="https://almuhandis-id.blogspot.com/" target="_blank">
+                        <i class="fab fa-blogger fa-2x"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCYG5NaCvrS7shwHoGEcjQOA/" target="_blank">
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/the-spatializer" target="_blank">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                </div>
+                <button id="btn" type="button" class="btn btn-primary btn-lg btn-block text-light">About Me</button>
             </div>
-            <div class="border-bottom border-primary">
-                <h5 class="media">
-                    <i class="fas fa-globe-asia text-primary fa-2x pr-2"></i>
-                    <span class="media-body align-self-center text-body">
-                        Bandar Lampung, Indonesia
-                        <a href="https://goo.gl/maps/xhrgN8mp428hAxxm9" target="_blank">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </span>
-                </h5>
-                <h5 class="media">
-                    <i class="fas fa-phone-alt text-primary fa-2x pr-2"></i>
-                    <span class="media-body align-self-center text-body">+6281278744679</span>
-                </h5>
-                <h5 class="media">
-                    <i class="fas fa-envelope text-primary fa-2x pr-2"></i>
-                    <span class="media-body align-self-center text-body">
-                        mfauzan.murtadho@gmail.com 
-                        <a href="mailto:mfauzan.murtadho@gmail.com" target="_blank">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </span>
-                </h5>
-            </div>
-            <div class="d-flex align-items-center justify-content-around rounded-lg p-2">
-                <a href="https://wa.me/6281278744679" target="_blank">
-                    <i class="fab fa-whatsapp fa-2x"></i>
-                </a>
-                <a href="https://t.me/m_fzn_m" target="_blank">
-                    <i class="fab fa-telegram fa-2x"></i>
-                </a>
-                <a href="https://www.instagram.com/m_fzn_m/" target="_blank">
-                    <i class="fab fa-instagram fa-2x"></i>
-                </a>
-                <a href="https://linkedin.com/in/m-fauzan-murtadho-337765141" target="_blank">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <a href="https://line.me/R/ti/p/@fzn_777" target="_blank">
-                    <i class="fab fa-line fa-2x"></i>
-                </a>
-                <a href="https://discordapp.com/users/692557459398590545" target="_blank">
-                    <i class="fab fa-discord fa-2x"></i>
-                </a>
-                <a href="https://almuhandis-id.blogspot.com/" target="_blank">
-                    <i class="fab fa-blogger fa-2x"></i>
-                </a>
-                <a href="https://www.youtube.com/channel/UCYG5NaCvrS7shwHoGEcjQOA/" target="_blank">
-                    <i class="fab fa-youtube fa-2x"></i>
-                </a>
-                <a href="https://github.com/the-spatializer" target="_blank">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
-            </div>
-            <button id="btn" type="button" class="btn btn-primary btn-lg btn-block">About Me</button>
-        </div>
         </div>
         <!-- card bottom -->
         <!-- full box top -->
-        <div id="details" class="container h-100">
+        <div id="details" class="container bx-shdw">
             <div class="row">
                 <!-- left column top -->
-                <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 bg-dark" style="height: 567px;">
+                <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 bg-dark">
                     <!-- back button top-->
                     <button id="back" type="button" class="btn btn-primary m-3 position-fixed" style="z-index: 10;">
                         <i class="link fas fa-arrow-alt-circle-left fa-2x text-light"></i>
@@ -96,7 +95,7 @@
                     <!-- profile picture bottom -->
                     <!-- name & title top -->
                     <div class="border-bottom border-primary pb-2 mb-3">
-                        <h3 class="text-white text-center font-weight-bold">Muhammad Fauzan Murtadho</h3>
+                        <h3 class="text-light text-center font-weight-bold">Muhammad Fauzan Murtadho</h3>
                         <h4 class="text-primary text-center font-weight-bold">Bachelor of Engineering in Geophysics</h4>
                     </div>
                     <!-- name & title bottom -->
@@ -104,7 +103,7 @@
                     <div class="border-bottom border-primary pb-2 mb-3">
                         <h5 class="media">
                             <i class="fas fa-globe-asia text-primary fa-2x pr-2"></i>
-                            <span class="media-body align-self-center text-white">
+                            <span class="media-body align-self-center text-light">
                                 Bandar Lampung, Indonesia
                                 <a href="https://goo.gl/maps/xhrgN8mp428hAxxm9" target="_blank">
                                     <i class="fas fa-external-link-alt"></i>
@@ -113,11 +112,11 @@
                         </h5>
                         <h5 class="media">
                             <i class="fas fa-phone-alt text-primary fa-2x pr-2"></i>
-                            <span class="media-body align-self-center text-white">+6281278744679</span>
+                            <span class="media-body align-self-center text-light">+6281278744679</span>
                         </h5>
                         <h5 class="media">
                             <i class="fas fa-envelope text-primary fa-2x pr-2"></i>
-                            <span class="media-body align-self-center text-white">
+                            <span class="media-body align-self-center text-light">
                                 mfauzan.murtadho@gmail.com 
                                 <a href="mailto:mfauzan.murtadho@gmail.com" target="_blank">
                                     <i class="fas fa-external-link-alt"></i>
@@ -440,16 +439,5 @@
         </div>
         <!-- full box bottom -->
     </body>
-    <script>
-        $(document).ready(function(){
-            $("#btn").click(function(){
-                $("#card").fadeOut("fast");
-                $("#details").fadeIn("fast");
-            });
-            $("#back").click(function(){
-                $("#details").fadeOut("fast");
-                $("#card").fadeIn("fast");
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </html>
