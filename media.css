@@ -1,0 +1,6 @@
+@media screen and (max-width: 470px) {
+    h3 {font-size: 20px;}
+    h4 {font-size: 18px;}
+    p {font-size: 15px;}
+    h5 span {font-size: 17px;}
+}
