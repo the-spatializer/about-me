@@ -1,3 +1,14 @@
 #details {display:none}
 .bx-shdw {box-shadow: 2px 2px 4px 2px grey;}
 #edu p {font-size: 15px;}
+
+@media screen and (max-width: 470px) {
+    h3 {font-size: 20px;}
+    h4 {font-size: 18px;}
+    p {font-size: 15px;}
+    h5 > span {font-size: 17px;}
+}
+
+@media print {
+    body {display: none;}
+}
