@@ -9,12 +9,6 @@ $(document).ready(function(){
         $("#card").fadeIn("fast");
     });
     // transition bottom
-    //button right top
-    w = screen.width;
-    if (w <= 768) {
-        $("#btn-back, #btn-prnt").addClass("btn-right");
-    };
-    //button bottom
     // printing top
     $("#btn-prnt").click(function(){
         $("#card").hide();
