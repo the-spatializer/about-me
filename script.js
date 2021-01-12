@@ -10,10 +10,6 @@ $(document).ready(function() {
     });
     // transition bottom
     // printing top
-    var isAndroid = /(android)/i.test(navigator.userAgent);
-    if(isAndroid) {
-        $("btn-prnt").hide();
-    };
     $("#btn-prnt").click(function() {
         $("#card").hide();
         $("#details").hide();
