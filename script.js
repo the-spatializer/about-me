@@ -18,7 +18,7 @@ $(document).ready(function(){
     });
     $(document).keydown(function(event) {
         if (event.ctrlKey == true && (event.which == "80")) {
-            alert("Sorry, you're not allowed to print using ctrl+p. Please use the print button instead.");
+            alert("Please use the print button instead of ctrl+p");
             return false;
         };
     });
