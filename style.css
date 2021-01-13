@@ -1,7 +1,6 @@
 #details {display: none;}
 .bx-shdw {box-shadow: 2px 2px 4px 2px grey;}
 #edu p {font-size: 15px;}
-#prnt {display: none;}
 
 @media screen and (max-width: 768px) {
     .btn-right {right: 10px;}
@@ -16,12 +15,9 @@
 }
 
 @media print {
-    #prnt {display:block;}
     p {font-size: 17px;}
     h5 {font-size: 21px;}
     h4 {font-size: 26px;}
-    #details {display: none;}
-    #card {display: none;}
     body {
         -webkit-print-color-adjust:exact !important;
         color-adjust:exact !important;
