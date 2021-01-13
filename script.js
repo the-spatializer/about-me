@@ -11,16 +11,7 @@ $(document).ready(function() {
     // transition bottom
     // printing top
     $("#btn-prnt").click(function() {
-        $("#card").hide();
-        $("#details").hide();
         window.print();
-        $("#details").show();
-    });
-    $(document).keydown(function(event) {
-        if (event.ctrlKey == true && (event.which == "80")) {
-            alert("Please use the print button instead of ctrl+p");
-            return false;
-        };
     });
     // printing bottom
     // disable selection top
