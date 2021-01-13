@@ -4,7 +4,6 @@
 
 @media screen and (max-width: 768px) {
     .btn-right {right: 10px;}
-    #btn-prnt {display: none;}
 }
 
 @media screen and (max-width: 470px) {
