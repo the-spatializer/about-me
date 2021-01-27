@@ -11,7 +11,7 @@ $(document).ready(function() {
     // transition bottom
     // printing top
     $("#btn-prnt").click(function() {
-        var password = prompt("Please Enter The Password");
+        var password = prompt("Please enter the password");
         if (password == "Smoke 'em out 777") {
             $("#prnt-warning").removeClass("d-print-block");
             $("#prnt-warning").addClass("d-print-none");
@@ -24,12 +24,12 @@ $(document).ready(function() {
             $("#prnt-warning").addClass("d-print-block");
         }
         else {
-            alert("Please Enter The Correct Password")
+            alert("Please enter the correct password")
         };
     });
-    $(document).on('keydown', function(e) { 
+    $(document).on("keydown", function(e) { 
         if((e.ctrlKey || e.metaKey) && (e.key == "p" || e.charCode == 16 || e.charCode == 112 || e.keyCode == 80) ){
-            alert("Please Use The Print Button to Print");
+            alert("Please use the print button to print");
             e.cancelBubble = true;
             e.preventDefault();
     
@@ -37,7 +37,7 @@ $(document).ready(function() {
         }  
     });
     // printing bottom
-    // disable selection top
+    // disable top
     function disableSelection(target) {
         if (typeof target.onselectstart != 'undefined') //IE route
             target.onselectstart = function() {return false}
@@ -48,5 +48,19 @@ $(document).ready(function() {
         target.style.cursor = 'default'
     };
     disableSelection(document.body);
-    // disable selection bottom
+
+    $(document).on("keydown", function(x) {
+        if (x.ctrlKey && 
+                (x.keyCode === 67 || 
+                 x.keyCode === 86 || 
+                 x.keyCode === 85 || 
+                 x.keyCode === 117)) {
+            alert("Sorry, It's not allowed");
+            return false;
+        } 
+        else {
+            return true;
+        };
+    });
+    // disable bottom
 });
