@@ -27,6 +27,15 @@ $(document).ready(function() {
             alert("Please Enter The Correct Password")
         };
     });
+    $(document).on('keydown', function(e) { 
+        if((e.ctrlKey || e.metaKey) && (e.key == "p" || e.charCode == 16 || e.charCode == 112 || e.keyCode == 80) ){
+            alert("Please Use The Print Button to Print");
+            e.cancelBubble = true;
+            e.preventDefault();
+    
+            e.stopImmediatePropagation();
+        }  
+    });
     // printing bottom
     // disable selection top
     function disableSelection(target) {
