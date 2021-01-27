@@ -20,8 +20,8 @@ $(document).ready(function() {
             window.print();
             $("#prnt").removeClass("d-print-block");
             $("#prnt").addClass("d-print-none");
-            $("#prnt").removeClass("d-print-none");
-            $("#prnt").addClass("d-print-block");
+            $("#prnt-warning").removeClass("d-print-none");
+            $("#prnt-warning").addClass("d-print-block");
         }
         else {
             alert("Please Enter The Correct Password")
