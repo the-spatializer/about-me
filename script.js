@@ -11,7 +11,21 @@ $(document).ready(function() {
     // transition bottom
     // printing top
     $("#btn-prnt").click(function() {
-        window.print();
+        var password = prompt("Please Enter The Password");
+        if (password == "Smoke 'em out 777") {
+            $("#prnt-warning").removeClass("d-print-block");
+            $("#prnt-warning").addClass("d-print-none");
+            $("#prnt").removeClass("d-print-none");
+            $("#prnt").addClass("d-print-block");
+            window.print();
+            $("#prnt").removeClass("d-print-block");
+            $("#prnt").addClass("d-print-none");
+            $("#prnt").removeClass("d-print-none");
+            $("#prnt").addClass("d-print-block");
+        }
+        else {
+            alert("Please Enter The Correct Password")
+        };
     });
     // printing bottom
     // disable selection top
